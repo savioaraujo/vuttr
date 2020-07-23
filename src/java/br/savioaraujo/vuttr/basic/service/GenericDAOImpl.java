@@ -15,6 +15,12 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+/**
+ * <p> Implementaçao das operaçoes basicas de um DAO </p>
+ *
+ * @author evaldosavio
+ * @param <T>
+ */
 public abstract class GenericDAOImpl<T extends BasicEntity> implements DAO<T> {
 
     public String innerJoin;

@@ -14,7 +14,7 @@ import javax.ejb.Stateless;
 import javax.persistence.Query;
 
 /**
- * <p> DAO para a classe Tool </p>
+ * <p> DAO para a classe Tag </p>
  *
  * @author evaldosavio
  */

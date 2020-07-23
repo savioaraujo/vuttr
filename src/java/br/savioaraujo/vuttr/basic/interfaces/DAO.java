@@ -8,7 +8,7 @@ package br.savioaraujo.vuttr.basic.interfaces;
 import br.savioaraujo.vuttr.basic.model.BasicEntity;
 
 /**
- * <p> Abstração de um Serviço. </p>
+ * <p> Abstração de um DAO. </p>
  *
  * @author evaldosavio
  * @param <T>

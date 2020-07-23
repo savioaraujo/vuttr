@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/webservice/ToolRESTService.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/build/generated-sources/rest/org/netbeans/rest/application/config/ApplicationConfig.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/basic/interfaces/DAO.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/basic/model/BasicEntity.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/basic/service/GenericDAOImpl.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/model/Tag.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/model/Tool.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/service/TagDAO.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/service/ToolDAO.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/utils/ReflectionUtils.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/utils/ToolUtils.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/utils/Utils.java</file>
+        <file>file:/opt/projetos/GitHub/vuttr/src/java/br/savioaraujo/vuttr/vo/ToolVO.java</file>
+    </open-files>
 </project-private>

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <p>Efetua operaçoes com a classe Tool</p>
+ * <p>Utilitario para efetuar operaçoes com a classe Tool</p>
  *
  * @author evaldosavio
  */

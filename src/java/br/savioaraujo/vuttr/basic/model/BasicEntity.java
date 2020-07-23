@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * <p>Contém os atributos necessários para se criar um entidade persistente</p>
+ * <p>Contém os atributos necessários para se criar uma entidade persistente</p>
  *
  * @author evaldosavio
  */
