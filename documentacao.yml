@@ -1,0 +1,126 @@
+swagger: "2.0"
+info:
+  description: "API construída para controlar ferramentas de uso. Os requisitos iniciais estão presentes no link https://github.com/gustavo-startaideia/desafio-backend."
+  version: "1.0.0"
+  title: "VUTTR"
+  contact:
+    email: "evaldosavioaraujo@gmail.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "url.com.br:3000"
+basePath: "/vuttr/webresources/tool/"
+schemes:
+- "http"
+paths:
+  /tools:
+    get:
+      tags:
+      - "tool"
+      summary: "Listar ferramentas"
+      description: "Lista todos a ferramentas cadastrada, sendo possível passar uma parâmetro tag e filtrar o resultado por todas as ferramentas que possuam aquela tag."
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "query"
+        type: "string"
+        name: "tag"
+        description: "Nome da tag. Ex: Node"
+        required: false
+      responses:
+        "200":
+          description: "Sucesso"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Tool"
+    post:
+      tags:
+      - "tool"
+      summary: "Cadastrar uma ferramenta"
+      description: "Recebe um json com a ferramenta a ser cadastra, caso o sistema identifique que a ferramenta já existe retorna uma mensagem informando que esta sendo cadastrado em duplicidade, caso contrário retorna o cadastro da tool efetuada com sucesso."
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "tool"
+        description: "ferramenta no formato json"
+        required: true
+        schema:
+          $ref: "#/definitions/Tool"
+      responses:
+        "201":
+          description: "Cadastrada com sucesso"
+          schema:
+            type: "object"
+            items:
+              $ref: "#/definitions/Tool"
+  /tools/{id}:
+    delete:
+      tags:
+      - "tool"
+      summary: "Remove uma ferramenta"
+      description: "Efetua a exclusão da ferramenta sendo necessário apenas informar o id da mesma"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID da ferramenta"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "204":
+          description: "Exclusão realizada com sucesso"
+          schema:
+            $ref: "#/definitions/ApiResponse"
+        "400":
+          description: "ID não informado"
+          schema:
+            $ref: "#/definitions/ApiResponse"
+        "404":
+          description: "ID não encontrada na base de dados"
+          schema:
+            $ref: "#/definitions/ApiResponse"
+definitions:
+  Tool:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      link:
+        type: "string"
+      description:
+        type: "string"
+      tags:
+        type: "string"
+        format: "date-time"
+      status:
+        type: "string"
+        description: "Order Status"
+        enum:
+        - "placed"
+        - "approved"
+        - "delivered"
+      complete:
+        type: "boolean"
+        default: false
+    xml:
+      name: "Tool"
+  ApiResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      type:
+        type: "string"
+      message:
+        type: "string"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"  
